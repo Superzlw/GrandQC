@@ -58,7 +58,9 @@ The System is **Ubuntu 22.04**.
 
 ### Install Dependencies
 > conda create -n grandqc python==3.10 -y && conda activate grandqc
+> 
 > git clone xxx && cd GrandQC
+> 
 > pip install -r requirement.txt
 
 ### Install Openslide
