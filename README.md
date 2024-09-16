@@ -73,7 +73,7 @@ The System is **Ubuntu 22.04**.
 
 The default version is 7x (Checkpoint: v35_E14.pth)
 
-To use 5x and 10x checkpoints, the main.py script should be modified.
+To use 5x and 10x checkpoints, the `main.py` script should be modified.
 
 For 5x, use:
 
