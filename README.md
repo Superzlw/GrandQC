@@ -17,7 +17,7 @@
 
 GrandQC is an open source artifacts segmentation toolbox based on PyTorch.
 
-The main branch works with **PyTorch 2+**. Our algorithm is trained using **segmentation-models-pytorch** versions 0.2.1 and 0.3.1. For optimal results, we recommend using version 0.3.1.
+The main branch works with **PyTorch 2+**. 
 
 The System is **Ubuntu 22.04**.
 
