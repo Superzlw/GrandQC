@@ -69,9 +69,28 @@ The System is **Ubuntu 22.04**.
 ### Install Openslide
 > conda install -c conda-forge openslide openslide-python
 
-## How to use
+## How to use different versions (5x ,7x, 10x)
 
-### For WSIs with the form of `.svs`, `.ndpi`
+The default version is 7x (Checkpoint: v35_E14.pth)
+
+To use 5x and 10x checkpoints, the main.py script should be modified.
+
+For 5x, use:
+
+```commandline
+MODEL_QC_NAME = 'v33_E40.pth'
+
+MPP_MODEL_1 = 2
+```
+For 10x, use:
+
+```commandline
+MODEL_QC_NAME = 'v36_E21.pth'
+MPP_MODEL_1 = 1
+```
+
+
+### For WSIs with the form of `.svs` (Leica), `.ndpi` (Hamamatsu), `.tiff` (Philips)
 
 Fot this case, you need to use the scripts in `01_WSI_inference_OPENSLIDE_QC`:
 
@@ -94,7 +113,7 @@ Similar to the Tissue Segmentation, before running the Artifacts-Segmentation sc
 sh run_art.sh
 ```
 
-### For WSIs with the form of `.tif`
+### For WSIs with the form of `ome.tiff`
 
 Fot this case, you need to use the scripts in `03_WSI_inference_OME_TIFF`:
 
